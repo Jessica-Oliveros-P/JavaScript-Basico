@@ -1,0 +1,13 @@
+{
+  "name": "primer-proyecto-de-node",
+  "version": "1.0.0",
+  "description": "primer proyecto de node",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "saludar": "node hola_mundo.js"
+  },
+  "author": "jessica oliveros",
+  "license": "ISC"
+}
