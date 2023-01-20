@@ -20,22 +20,20 @@ const movies = [
 
 //Una nueva lista que contenga las películas posteriores al 1 de enero de 2010 (utilizando filter)
 
-const listapostene = movies.filter( obj => obj.fecha > new Date(2010, 1, 1) )
+const listapostene = movies.filter( movies => movies.fecha > new Date(2010, 1, 1) )
 
 //Una nueva lista que contenga los directores de la lista de películas original (utilizando map)
 
-let listadirectores = movies.map(obj => obj.Director)
+let listadirectores = movies.map(movies => movies.Director)
 
 //Una nueva lista que contenga los títulos de la lista de películas original (utilizando map)
 
-let listatitulos = movies.map(obj => obj.titulo)
+let listatitulos = movies.map(movies => movies.titulo)
 
 //Una nueva lista que concatene la lista de directores y la lista de los títulos (utilizando concat) 
 
 const listaconcat = listadirectores.concat(listatitulos) 
-console.log (listaconcat)
 
 //Una nueva lista que concatene la lista de directores y la lista de los títulos (utilizando el factor de propagación)
 
 const listapropagacion = [...listadirectores, ...listatitulos]
-console.log (listapropagacion)
